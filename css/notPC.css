@@ -8,17 +8,18 @@
 .time {
   text-align: center;
 }
-
-/* Tablet and Mobile Styles */
-@media only screen and (max-width: 800px) {
-  .bottomFangs {
-    display: block;
+/* Landscape orientation for mobile */
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  .time-container {
+    flex-direction: row; /* Aligns time blocks horizontally */
+    justify-content: center;
+    gap: 15px; /* Adjusts spacing between blocks */
   }
 
-  li {
-    font-size: 45px;
+  .time {
+    font-size: 20px; /* Adjusts font size for better fit */
   }
-
+}
   .logo {
     margin-left: -10px;
     margin-top: -10px;
